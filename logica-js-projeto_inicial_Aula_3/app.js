@@ -1,8 +1,8 @@
 alert("Boas vindas ao jogo do número secreto!");
 let numeroSecreto = parseInt(Math.random() * 31);
-let tentativas = 3;
+let tentativas = 1;
 
-while (tentativas > 0) {
+while (palpite !== numeroSecreto) {
     console.log(`Número secreto: ${numeroSecreto}, Tentativas restantes: ${tentativas}`)  // linha para ajudar nos testes
     let palpite = parseInt(prompt("Digite um número entre 0 e 30:"));
     if (palpite === numeroSecreto) {
@@ -11,10 +11,11 @@ while (tentativas > 0) {
     } else {
         tentativas--;
         if (palpite < numeroSecreto) {
-            alert("Você errou! O número é maior. Tentativas restantes: " + tentativas);
+            alert("Você errou! O número é maior. Quantidade de tentativas: " + tentativas);
         } else {
-            alert("Você errou! O número é menor. Tentativas restantes: " + tentativas);
+            alert("Você errou! O número é menor. Quantidade de tentativas: " + tentativas);
         }
+        tentativas++;
     }
 }
 
