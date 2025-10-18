@@ -17,8 +17,8 @@ while (palpite !== numeroSecreto) {
         }
         tentativas++;
     }
-}
-
-if (tentativas === 0) {
-    alert(`Suas tentativas acabaram! O número secreto era: ${numeroSecreto} :(`);
+    if (tentativas === 100) {
+        alert(`Suas tentativas acabaram! O número secreto era: ${numeroSecreto} :(`);
+        break;
+    }   
 }

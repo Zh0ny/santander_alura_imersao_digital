@@ -1,0 +1,117 @@
+# .gitignore - root for project /d:/Dev/Courses/Alura/Santander
+# Generic OS
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+Icon?
+._*
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*~
+*.bak
+
+# Environment files
+.env
+.env.*.local
+.env.local
+.env.production
+.env.development
+.env.test
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+coverage/
+.cache/
+
+# Java / JVM
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+hs_err_pid*
+replay_pid*
+crash-*.log
+
+# Build tools
+target/
+build/
+out/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# IDEs
+# IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+bin/
+
+# JetBrains Rider / ReSharper
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# Python (if any)
+__pycache__/
+*.py[cod]
+venv/
+ENV/
+env/
+pip-log.txt
+
+# Docker
+docker-compose.override.yml
+docker-compose.*.yml
+docker-compose.*.local.yml
+**/.env
+
+# CI / temp / misc
+*.cache
+tmp/
+temp/
+coverage/
+reports/
+
+# OS-specific backups
+.Spotlight-V100
+.Trashes
+.directory
+
+# Allow custom local files (uncomment to ignore all .local files)
+# *.local
+
+*.zip
